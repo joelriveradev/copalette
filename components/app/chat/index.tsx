@@ -123,7 +123,7 @@ export function PaletteChat({ id, className = '', palette, history = [] }: Props
 
           return (
             <div key={id} className='w-full mb-10'>
-              <div className='flex items-center mb-1'>
+              <div className='flex items-center mb-1 text-sm'>
                 <strong>{isChatGPT ? 'Assistant' : 'You'}</strong>
               </div>
 
