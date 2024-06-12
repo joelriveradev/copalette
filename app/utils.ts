@@ -1,4 +1,4 @@
-export function useRelativeTime(createdAtISO: string): string {
+export function getRelativeTime(createdAtISO: string): string {
   const createdAt = new Date(createdAtISO)
   const now = new Date()
   const seconds = Math.floor((now.getTime() - createdAt.getTime()) / 1000)

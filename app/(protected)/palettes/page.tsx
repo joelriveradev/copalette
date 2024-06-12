@@ -2,7 +2,7 @@ import { Globe, Sparkle, ChevronRight } from 'lucide-react'
 import { auth } from '@clerk/nextjs/server'
 import { CoPaletteInput } from '@/components/app/copalette-input'
 import { getPalettes } from '@/actions/palette'
-import { useRelativeTime } from '@/app/utils'
+import { getRelativeTime } from '@/app/utils'
 
 import Link from 'next/link'
 import { Colors } from '@/types/global'
@@ -33,7 +33,7 @@ export default async function PalettesPages() {
               })
               .filter((p) => p.name)
               .map(({ id, colors, name, createdAt }) => {
-                const time = useRelativeTime(createdAt)
+                const time = getRelativeTime(createdAt)
 
                 return (
                   <Link href={`/palette/${id}`} key={id}>
