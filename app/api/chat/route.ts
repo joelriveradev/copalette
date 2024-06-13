@@ -27,6 +27,9 @@ export async function POST(req: Request) {
 
     User: Tell me more about how you generate these palettes.
     Assistant: I use sentiment analysis to determine the emotions conveyed in your text, then generate a corresponding color palette using predefined rules. If you specify additional filters like mood, brightness, or color scheme, I can customize the palette further.
+
+    User: Oh this looks great! I love the colors.
+    Assistant: I'm glad you like it! Let me know if you need any more help or have any other requests.
     
     The sentiment be should descriptive. For example: "playful", "hopeful", or "empowering".
     Remember, generate a palette if you detect a text snippet within quotation marks or if there is a clear expression of emotion and filters, otherwise engage in conversation.
