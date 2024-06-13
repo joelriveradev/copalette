@@ -69,7 +69,7 @@ export default function LandingPage() {
             <div className='relative bg-transparent w-full lg:w-96 xl:w-[500px] flex items-center transition-all'>
               <Input
                 ref={inputRef}
-                className='rounded-full bg-transparent shrink-0 py-6 px-6 focus:pr-14 w-full lg:w-96 xl:w-[500px] hover:cursor-pointer focus:cursor-text border-black focus:placeholder:text-neutral-500 transition-all'
+                className='rounded-full text-base bg-transparent shrink-0 py-6 px-6 focus:pr-14 w-full lg:w-96 xl:w-[500px] hover:cursor-pointer focus:cursor-text border-black focus:placeholder:text-neutral-500 transition-all'
                 type='text'
                 placeholder='Type a message, see how it feels in color'
                 onChange={handleChange}
