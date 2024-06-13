@@ -16,16 +16,6 @@ export default async function PalettesPages() {
     <main className='relative px-7 pr-6 2xl:p-0'>
       <section className='min-h-96 my-16'>
         <div className='w-full max-w-7xl mx-auto'>
-          <header className='w-full flex items-center justify-between'>
-            <h1 className='flex items-center'>
-              Discover <Globe className='ml-3' size={20} />
-            </h1>
-
-            <Link href='/discover' className='flex items-center text-sm'>
-              View all <ChevronRight className='text-current ml-2' size={20} />
-            </Link>
-          </header>
-
           <div className='w-full grid grid-cols-1 md:grid-cols-3 gap-6 gap-y-12 mt-16 '>
             {palettes
               .sort((a, b) => {
