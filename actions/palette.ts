@@ -99,8 +99,6 @@ export const updatePalette = async ({
       const { args } = toolInvocations[0]
       const { name, sentiment, palette: colors } = args
 
-      console.log({ colors })
-
       await db
         .update(palettes)
         .set({ name, sentiment, colors, updatedAt: new Date().toISOString() })
