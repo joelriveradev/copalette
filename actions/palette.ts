@@ -7,6 +7,9 @@ import type {
   UpdatePaletteReturnType
 } from '@/types/actions'
 
+import { openai } from '@ai-sdk/openai'
+import { generateObject } from 'ai'
+import { z } from 'zod'
 import { auth } from '@clerk/nextjs/server'
 import { db } from '@/lib/drizzle/db'
 import { palettes } from '@/lib/drizzle/schema'
@@ -15,6 +18,30 @@ import { eq, and } from 'drizzle-orm'
 import { redirect } from 'next/navigation'
 import { Messages } from '@/types/ai'
 import { kv } from '@vercel/kv'
+
+export const generateDemoPalette = async (data: FormData) => {
+  const prompt = data.get('prompt') as string
+
+  if (prompt) {
+    const { object: palette } = await generateObject({
+      model: openai('gpt-4o'),
+      schema: z.object({
+        name: z.string().describe('A creative name for the color palette.'),
+        sentiment: z.string().describe("The sentiment of the user's message."),
+        colors: z
+          .array(
+            z.object({
+              hex: z.string().describe('A hex color code')
+            })
+          )
+          .length(6)
+      }),
+      prompt: `Given the following prompt, generate a color palette based on the sentiment: ${prompt}. The name should be creative, short, and succinct. For example: "Tranquil Oasis" or "Whimsy Wonderland".`
+    })
+
+    return palette
+  }
+}
 
 export const createPalette = async (data: FormData) => {
   const { userId } = auth()

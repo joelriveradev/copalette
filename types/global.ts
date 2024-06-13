@@ -18,111 +18,51 @@ export interface Palette {
 
 export const DemoPalettes: Array<Palette> = [
   {
-    name: 'Whimsy Wonderland',
+    name: 'Joyful Jubilations',
     sentiment: 'Playful',
     colors: [
-      {
-        hex: '#FFD700',
-        rgb: [255, 215, 0],
-        hsl: [51, 100, 50]
-      },
-      {
-        hex: '#FF69B4',
-        rgb: [255, 105, 180],
-        hsl: [330, 100, 71]
-      },
-      {
-        hex: '#00FF00',
-        rgb: [0, 255, 0],
-        hsl: [120, 100, 50]
-      },
-      {
-        hex: '#0000FF',
-        rgb: [0, 0, 255],
-        hsl: [240, 100, 50]
-      },
-      {
-        hex: '#FF4500',
-        rgb: [255, 69, 0],
-        hsl: [16, 100, 50]
-      },
-      {
-        hex: '#8A2BE2',
-        rgb: [138, 43, 226],
-        hsl: [275, 76, 52]
-      }
+      { hex: '#FFD700' },
+      { hex: '#FF7F50' },
+      { hex: '#FFFFE0' },
+      { hex: '#FFA07A' },
+      { hex: '#E0FFFF' },
+      { hex: '#98FB98' }
     ]
   },
   {
-    name: 'Blooming Optimism',
+    name: 'Euphoric Radiance',
     sentiment: 'Hopeful',
     colors: [
-      {
-        hex: '#FFA07A',
-        rgb: [255, 160, 122],
-        hsl: [16, 100, 74]
-      },
-      {
-        hex: '#FFD700',
-        rgb: [255, 215, 0],
-        hsl: [51, 100, 50]
-      },
-      {
-        hex: '#00FF00',
-        rgb: [0, 255, 0],
-        hsl: [120, 100, 50]
-      },
-      {
-        hex: '#0000FF',
-        rgb: [0, 0, 255],
-        hsl: [240, 100, 50]
-      },
-      {
-        hex: '#FF4500',
-        rgb: [255, 69, 0],
-        hsl: [16, 100, 50]
-      },
-      {
-        hex: '#8A2BE2',
-        rgb: [138, 43, 226],
-        hsl: [275, 76, 52]
-      }
+      { hex: '#FFD700' },
+      { hex: '#FFA500' },
+      { hex: '#FF4500' },
+      { hex: '#FFFF00' },
+      { hex: '#FF69B4' },
+      { hex: '#FF1493' }
     ]
   },
   {
-    name: 'Tranquil Oasis',
+    name: 'Heavenly Liberation',
     sentiment: 'Trustful',
     colors: [
-      {
-        hex: '#00FF00',
-        rgb: [0, 255, 0],
-        hsl: [120, 100, 50]
-      },
-      {
-        hex: '#FFD700',
-        rgb: [255, 215, 0],
-        hsl: [51, 100, 50]
-      },
-      {
-        hex: '#0000FF',
-        rgb: [0, 0, 255],
-        hsl: [240, 100, 50]
-      },
-      {
-        hex: '#FF69B4',
-        rgb: [255, 105, 180],
-        hsl: [330, 100, 71]
-      },
-      {
-        hex: '#FF4500',
-        rgb: [255, 69, 0],
-        hsl: [16, 100, 50]
-      },
-      {
-        hex: '#8A2BE2',
-        rgb: [138, 43, 226],
-        hsl: [275, 76, 52]
-      }
+      { hex: '#FFEE93' },
+      { hex: '#A8E6CF' },
+      { hex: '#FFD3B6' },
+      { hex: '#FFAAA5' },
+      { hex: '#DCEDC1' },
+      { hex: '#FF8B94' }
+    ]
+  },
+  {
+    name: 'Hidden Sorrows',
+    sentiment: 'Sad',
+    colors: [
+      { hex: '#2E2E38' },
+      { hex: '#4B4B59' },
+      { hex: '#6A7790' },
+      { hex: '#948C99' },
+      { hex: '#B1A6A4' },
+      { hex: '#D1C8C0' }
     ]
   }
 ]
