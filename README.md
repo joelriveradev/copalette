@@ -2,6 +2,12 @@
 
 Generate AI-powered color palettes based on the sentiment analysis of text. Type a message, see how it feels in color.
 
+**Demo**
+
+
+https://github.com/joelriveradev/copalette/assets/10171624/fa505b57-f483-42fa-86f5-32e1a665caf3
+
+
 **Features:**
 
 1. **_Sentiment-Based Color Palettes_**
